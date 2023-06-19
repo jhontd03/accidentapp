@@ -109,7 +109,7 @@ def scatter_graph(data, year_filter, state_filter, x_var, y_var, z_var):
     ) 
     return fig_scatter
 
-# @st.cache_data
+@st.cache_data
 def map_accident(data, state_filter, year_filter, var_filter):
     """
     Generates a map visualization of accidents using the specified data and filters.
@@ -162,16 +162,16 @@ def map_accident(data, state_filter, year_filter, var_filter):
                    elevation_range=[val_min, val_max],
                    pickable=True,
                    extruded=True,
-                    auto_highlight=False,
+                   auto_highlight=False,
                 ),
-                pdk.Layer(
-                   'ScatterplotLayer',
-                    data=data_filter,
-                    get_position='[longitude, latitude]',
-                    get_color='[180, 0, 200, 140]',
-                    get_radius=200,
-                    auto_highlight=True,
-                ),
+                # pdk.Layer(
+                #    'ScatterplotLayer',
+                #     data=data_filter,
+                #     get_position='[longitude, latitude]',
+                #     get_color='[180, 0, 200, 140]',
+                #     get_radius=200,
+                #     auto_highlight=True,
+                # ),
             ],
         ))
 

@@ -18,7 +18,6 @@ def count_graph(data, state_filter, year_filter, cat_filter):
     Returns:
     - fig_count: (plotly.graph_objects.Figure): bar graph figure.
     """
-    
     if isinstance(state_filter, list) == False:
         state_filter = [state_filter]
 
@@ -62,7 +61,6 @@ def count_graph(data, state_filter, year_filter, cat_filter):
 
 @st.cache_data
 def scatter_graph(data, year_filter, state_filter, x_var, y_var, z_var): 
-
     """
     Generates a scatter graph based on the provided data and filters.
 
@@ -77,7 +75,6 @@ def scatter_graph(data, year_filter, state_filter, x_var, y_var, z_var):
     Returns:
     - fig_scatter (plotly.graph_objects.Figure): Scatter graph figure.
     """
-    
     if isinstance(year_filter, list) == False:
         year_filter = [year_filter]
     year_filter = [int(item) for item in year_filter]
@@ -123,7 +120,6 @@ def map_accident(data, state_filter, year_filter, var_filter):
     Returns:
         None
     """    
-
     if isinstance(state_filter, list) == False:
 
         if isinstance(year_filter, list) == False:
@@ -155,22 +151,20 @@ def map_accident(data, state_filter, year_filter, var_filter):
             layers=[
                 pdk.Layer(
                   'HexagonLayer',
-                    data=data_filter,
-                    get_position='[longitude, latitude]',
-                    radius=150,
-                    elevation_scale=int(val_max)*5,
-                    elevation_range=[int(val_min), int(val_max)],
-                    # pickable=True,
-                    extruded=True,
-                    # auto_highlight=True,
+                   data=data_filter,
+                   get_position='[longitude, latitude]',
+                   radius=150,
+                   elevation_scale=int(val_max)*5,
+                   elevation_range=[int(val_min), int(val_max)],
+                   extruded=True,
                 ),
                 pdk.Layer(
-                    'ScatterplotLayer',
-                    data=data_filter,
-                    get_position='[longitude, latitude]',
-                    get_fill_color='[255, 64, 128, 200]',
-                    get_radius=150,
-                    auto_highlight=True,
+                   'ScatterplotLayer',
+                   data=data_filter,
+                   get_position='[longitude, latitude]',
+                   get_fill_color='[255, 64, 128, 200]',
+                   get_radius=150,
+                   auto_highlight=True,
                 ),
             ],
         ))
@@ -191,7 +185,6 @@ def sum_stats_study(data, state_filter, year_filter, study_stats, cat_filter):
     Returns:
         plotly.graph_objects.Figure: The bar chart figure.
     """
-
     if isinstance(state_filter, list) == False:
         state_filter = [state_filter]
 
@@ -248,7 +241,6 @@ def choropleth_graph(data, year_filter, var_filter):
     Returns:
         plotly.graph_objects.Figure: The choropleth graph figure.
     """    
-
     if isinstance(year_filter, list) == False:
         year_filter = [year_filter]
     year_filter = [int(item) for item in year_filter]

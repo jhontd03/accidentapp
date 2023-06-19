@@ -67,7 +67,7 @@ view_map = st.sidebar.selectbox('Visualizar mapa', ['No', 'Si'])
 
 expander_1 = st.expander('Análisis general', expanded=True)
 
-tab1, tab2, tab3 = expander_1.tabs(["Conteo accidentes por año", "Conteo variables categóricas", "Valor promedio variables numéricas"])
+tab1, tab2, tab3 = expander_1.tabs(["Conteo accidentes por año", "Conteo variables categóricas", "Suma total variables numéricas"])
 
 with tab1:
     st.plotly_chart(count_graph(data_accident, state_filter, years, 'Year'), 

@@ -26,6 +26,8 @@ las condiciones que conllevan a un mayor o menor grado de  accidentalidad en las
 
 Para la ejecución del programa es necesario instalar  [python 3.9.16](https://www.python.org/downloads/release/python-3916/) y los paquetes incluidos en el archivo [requeriments.txt](https://github.com/jhontd03/accidentapp/blob/master/requirements.txt). 
 Para usuarios de windows se recomienda usar el emulador de la terminal de comandos [cmder](https://cmder.app/)  similar al bash de linux. 
+En caso de ser necesario, los usuarios de windows deben agregar el directorio de instalación de windos a las variables de entorno, tal como se describe
+en el siguiente [tutorial](https://realpython.com/add-python-to-path/)
 
 ## Uso
 
@@ -38,8 +40,6 @@ python -m venv venv
 venv\Scripts\activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-cd accidentapp
-python etl_process.py
 streamlit run app_main.py
 ```
 

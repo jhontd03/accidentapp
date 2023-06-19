@@ -76,14 +76,14 @@ with tab1:
 with tab2:
     cat_tab2 = copy.deepcopy(cat_study) 
     cat_tab2.remove('Year')
-    cat_filter_1 = st.selectbox('Categoria', cat_tab2)
+    cat_filter_1 = st.selectbox('Categoría', cat_tab2)
     st.plotly_chart(count_graph(data_accident, state_filter, year_filter, cat_filter_1), 
                     theme="streamlit", use_container_width=True)
 
 with tab3:
     col1, col2 = st.columns(2)
     with col1:       
-        cat_filter_2 = st.selectbox('Categoria estudio', cat_tab2)        
+        cat_filter_2 = st.selectbox('Categoría estudio', cat_tab2)        
     with col2:
         study_filter = st.selectbox('Variable estudio', vars_study)
     st.plotly_chart(sum_stats_study(data_accident, state_filter, year_filter, study_filter, cat_filter_2), 
@@ -108,7 +108,7 @@ expander_2.plotly_chart(scatter_graph(data_accident,
                                       use_container_width=True)
 if view_map == 'Si':
     expander_3 = st.expander('Mapa Accidentes', expanded=True)
-    var_filter = expander_3.selectbox("Parametro Estudio", vars_study)
+    var_filter = expander_3.selectbox("Parámetro Estudio", vars_study)
 
     tab1, tab2 = expander_3.tabs(["Variables promedio por Estados", "Ubicación de Accidentes por Estados"])
 

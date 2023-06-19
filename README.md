@@ -15,18 +15,19 @@
 
 El presente proyecto hace parte de la práctica final de la Asignatura Visualización de Datos del [Máster Universitario en Ciencia de Datos de la UOC](https://www.uoc.edu/es/estudios/masters/master-universitario-data-science). 
 
-El conjunto de datos seleccionado se deriva de los reportes de la [Administración Nacional  de Seguridad del Tráfico en las Carreteras](https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/), cuya compilación de informes se crearon para los Estados Unidos, con el objetivo de proporcionar una medida global de la seguridad de las carreteras. Para el desarrollo de esta aplicación se ha considerado los datos del periodo 2011-2021.
+El conjunto de datos seleccionado se deriva de los reportes de la [Administración Nacional  de Seguridad del Tráfico en las Carreteras](https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/), cuya compilación de informes se crearon para los Estados Unidos, con el objetivo de proporcionar una medida global de la seguridad de las carreteras. Para el desarrollo de este proyecto se ha considerado los datos del periodo 2011-2021.
 
-Con base en esta información se genera un dashboard donde se presentan distintas visualizaciones interactivas cuyo propósito es explorar e identificar 
-las condiciones que conllevan a un mayor o menor grado de  accidentalidad en las carreteras de los Estados Unidos. 
+Con base en esta información se implementa un dashboard con python y la librería [streamlit](https://streamlit.io/), donde se presentan distintas visualizaciones interactivas cuyo propósito es explorar e identificar 
+las condiciones que conllevan a un mayor o menor grado de accidentalidad en las carreteras de los Estados Unidos. 
 
 ## Instalación
 
 ## Requisitos
 
-Para la ejecución del programa es necesario instalar  [python 3.9.16](https://www.python.org/downloads/release/python-3916/) y los paquetes incluidos en el archivo [requeriments.txt](https://github.com/jhontd03/accidentapp/blob/master/requirements.txt). 
+Para la ejecución de la aplicación es necesario instalar  [python 3.9.16](https://www.python.org/downloads/release/python-3916/) y los paquetes incluidos en el archivo [requeriments.txt](https://github.com/jhontd03/accidentapp/blob/master/requirements.txt). 
 Para usuarios de windows se recomienda usar el emulador de la terminal de comandos [cmder](https://cmder.app/)  similar al bash de linux. 
-En caso de ser necesario, los usuarios de windows deben agregar el directorio de instalación de python a las variables de entorno, tal como se describe
+
+En caso que el archivo python.exe no se puede ejectuar desde la terminal de comandos, es necesario que los usuarios de windows agreguen el directorio de instalación de python a las variables de entorno, tal como se describe
 en el siguiente [tutorial.](https://realpython.com/add-python-to-path/)
 
 ## Uso

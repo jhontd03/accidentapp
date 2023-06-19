@@ -109,7 +109,7 @@ def scatter_graph(data, year_filter, state_filter, x_var, y_var, z_var):
     ) 
     return fig_scatter
 
-@st.cache_data
+# @st.cache_data
 def map_accident(data, state_filter, year_filter, var_filter):
     """
     Generates a map visualization of accidents using the specified data and filters.

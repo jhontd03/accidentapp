@@ -249,7 +249,7 @@ def choropleth_graph(data, year_filter, var_filter):
     name_state = data['State'].unique()
     code_name = dict(zip(name_state, code_state))
 
-    data_mean = data[(data['Year'].isin(year_filter))].groupby('State').mean(numeric_only=True).reset_index()
+    data_mean = data[(data['Year'].isin(year_filter))].groupby('State').sum(numeric_only=True).reset_index()
     
     data_mean['code_state'] = data_mean['State']
     data_mean['code_state'] = data_mean['code_state'].replace(code_name)

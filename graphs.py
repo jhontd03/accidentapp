@@ -3,6 +3,7 @@ import plotly.express as px
 from common import replace_name
 import streamlit as st
 import pydeck as pdk 
+from pydeck.types import String
 
 @st.cache_data
 def count_graph(data, state_filter, year_filter, cat_filter):    
@@ -142,7 +143,7 @@ def map_accident(data, state_filter, year_filter, var_filter):
         val_lat = data_filter['latitude'].describe().iloc[5]
         
         st.pydeck_chart(pdk.Deck(
-            map_style='mapbox://styles/mapbox/dark-v11',
+            # map_style='mapbox://styles/mapbox/dark-v11',
             initial_view_state=pdk.ViewState(
                 latitude=val_lat,
                 longitude=val_long,
@@ -153,25 +154,26 @@ def map_accident(data, state_filter, year_filter, var_filter):
                 bearing=-45
             ),
             layers=[
-                pdk.Layer(
-                  'HexagonLayer',
-                   data=data_filter[['longitude', 'latitude']],
-                   get_position='[longitude, latitude]',
-                   radius=200,
-                   elevation_scale=500,
-                   elevation_range=[val_min, val_max],
-                   pickable=True,
-                   extruded=True,
-                   auto_highlight=False,
-                ),
                 # pdk.Layer(
-                #    'ScatterplotLayer',
-                #     data=data_filter,
-                #     get_position='[longitude, latitude]',
-                #     get_color='[180, 0, 200, 140]',
-                #     get_radius=200,
-                #     auto_highlight=True,
+                #   'HexagonLayer',
+                #    data=data_filter,
+                #    get_position='[longitude, latitude]',
+                #    radius=200,
+                #    elevation_scale=500,
+                #    elevation_range=[val_min, val_max],
+                #    pickable=True,
+                #    extruded=True,
+                #    auto_highlight=False,
                 # ),
+                
+
+                pdk.Layer(
+                'HeatmapLayer',
+                data=data_filter,
+                get_position='[longitude, latitude]',
+                aggregation=String('MEAN'),
+                get_weight=var_filter
+                ),
             ],
         ))
 

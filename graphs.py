@@ -155,7 +155,7 @@ def map_accident(data, state_filter, year_filter, var_filter):
             layers=[
                 pdk.Layer(
                   'HexagonLayer',
-                   data=data_filter,
+                   data=data_filter[['longitude', 'latitude']],
                    get_position='[longitude, latitude]',
                    radius=200,
                    elevation_scale=500,

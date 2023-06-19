@@ -63,17 +63,6 @@ El árbol de directorios del repositorio es el siguiente:
 ¦   ¦   data_accident.pkl
 ¦   ¦   
 ¦   +---accident_data
-¦   ¦       accident_2000.CSV
-¦   ¦       accident_2001.CSV
-¦   ¦       accident_2002.CSV
-¦   ¦       accident_2003.CSV
-¦   ¦       accident_2004.CSV
-¦   ¦       accident_2005.CSV
-¦   ¦       accident_2006.CSV
-¦   ¦       accident_2007.CSV
-¦   ¦       accident_2008.CSV
-¦   ¦       accident_2009.CSV
-¦   ¦       accident_2010.CSV
 ¦   ¦       accident_2011.CSV
 ¦   ¦       accident_2012.csv
 ¦   ¦       accident_2013.csv

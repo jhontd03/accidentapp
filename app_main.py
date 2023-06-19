@@ -110,7 +110,7 @@ if view_map == 'Si':
     expander_3 = st.expander('Mapa Accidentes', expanded=True)
     var_filter = expander_3.selectbox("Parámetro Estudio", vars_study)
 
-    tab1, tab2 = expander_3.tabs(["Variables promedio por Estados", "Ubicación de Accidentes por Estados"])
+    tab1, tab2 = expander_3.tabs(["Suma total por Estados", "Ubicación de Accidentes por Estados"])
 
     with tab1:  
         st.plotly_chart(choropleth_graph(data_accident, year_filter, var_filter), 

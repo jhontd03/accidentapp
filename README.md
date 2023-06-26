@@ -2,8 +2,8 @@
 
 ## [Contenido](#Contenido)
 
-- [Introducción](#Introducción)
-- [Instalación](#Instalación)
+- [IntroducciÃ³n](#IntroducciÃ³n)
+- [InstalaciÃ³n](#InstalaciÃ³n)
 - [Requisitos](#Requisitos)
 - [Uso](#Uso)
 - [Estructura del repositorio](#Estructura-del-repositorio)
@@ -11,28 +11,28 @@
 - [Licencia](#Licencia)
 - [Autor](#Autor)
 
-## Introducción
+## IntroducciÃ³n
 
-El presente proyecto hace parte de la práctica final de la Asignatura Visualización de Datos del [Máster Universitario en Ciencia de Datos de la UOC](https://www.uoc.edu/es/estudios/masters/master-universitario-data-science). 
+El presente proyecto hace parte de la prÃ¡ctica final de la Asignatura VisualizaciÃ³n de Datos del [MÃ¡ster Universitario en Ciencia de Datos de la UOC](https://www.uoc.edu/es/estudios/masters/master-universitario-data-science). 
 
-El conjunto de datos seleccionado se deriva de los reportes de la [Administración Nacional  de Seguridad del Tráfico en las Carreteras](https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/), cuya compilación de informes se crearon para los Estados Unidos, con el objetivo de proporcionar una medida global de la seguridad de las carreteras. Para el desarrollo de este proyecto se ha considerado los datos del periodo 2011-2021.
+El conjunto de datos seleccionado se deriva de los reportes de la [AdministraciÃ³n Nacional  de Seguridad del TrÃ¡fico en las Carreteras](https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/), cuya compilaciÃ³n de informes se crearon para los Estados Unidos, con el objetivo de proporcionar una medida global de la seguridad de las carreteras. Para el desarrollo de este proyecto se ha considerado los datos del periodo 2011-2021.
 
-Con base en esta información se implementa un dashboard con python y la librería [streamlit](https://streamlit.io/), donde se presentan distintas visualizaciones interactivas cuyo propósito es explorar e identificar 
+Con base en esta informaciÃ³n se implementa un dashboard con python y la librerÃ­a [streamlit](https://streamlit.io/), donde se presentan distintas visualizaciones interactivas cuyo propÃ³sito es explorar e identificar 
 las condiciones que conllevan a un mayor o menor grado de accidentalidad en las carreteras de los Estados Unidos. 
 
-## Instalación
+## InstalaciÃ³n
 
 ## Requisitos
 
-Para la ejecución de la aplicación es necesario instalar  [python 3.9.16](https://www.python.org/downloads/release/python-3916/) y los paquetes incluidos en el archivo [requeriments.txt](https://github.com/jhontd03/accidentapp/blob/master/requirements.txt). 
+Para la ejecuciÃ³n de la aplicaciÃ³n es necesario instalar  [python 3.9.16](https://www.python.org/downloads/release/python-3916/) y los paquetes incluidos en el archivo [requeriments.txt](https://github.com/jhontd03/accidentapp/blob/master/requirements.txt). 
 Para usuarios de windows se recomienda usar el emulador de la terminal de comandos [cmder](https://cmder.app/)  similar al bash de linux. 
 
-En caso que el archivo python.exe no se puede ejectuar desde la terminal de comandos, es necesario que los usuarios de windows agreguen el directorio de instalación de python a las variables de entorno, tal como se describe
+En caso que el archivo python.exe no se puede ejectuar desde la terminal de comandos, es necesario que los usuarios de windows agreguen el directorio de instalaciÃ³n de python a las variables de entorno, tal como se describe
 en el siguiente [tutorial.](https://realpython.com/add-python-to-path/)
 
 ## Uso
 
-Clone el presente repositorio cree un entorno virtual, instale los paquetes y ejecute el código python directamente.
+Clone el presente repositorio cree un entorno virtual, instale los paquetes y ejecute el cÃ³digo python directamente.
 
 ```
 git clone https://github.com/jhontd03/accidentapp.git
@@ -46,39 +46,39 @@ streamlit run app_main.py
 
 ## Estructura del repositorio
 
-El árbol de directorios del repositorio es el siguiente:
+El Ã¡rbol de directorios del repositorio es el siguiente:
 ```
 .
-¦   app_main.py
-¦   common.py
-¦   EDA_accident.ipynb
-¦   etl_process.py
-¦   graphs.py
-¦   rename.py
-¦   __init__.py
-¦   
+Â¦   app_main.py
+Â¦   common.py
+Â¦   EDA_accident.ipynb
+Â¦   etl_process.py
+Â¦   graphs.py
+Â¦   rename.py
+Â¦   __init__.py
+Â¦   
 +---.ipynb_checkpoints
-¦       EDA_accident-checkpoint.ipynb
-¦       
+Â¦       EDA_accident-checkpoint.ipynb
+Â¦       
 +---data
-¦   ¦   data_accident.pkl
-¦   ¦   
-¦   +---accident_data
-¦   ¦       accident_2011.CSV
-¦   ¦       accident_2012.csv
-¦   ¦       accident_2013.csv
-¦   ¦       accident_2014.csv
-¦   ¦       accident_2015.csv
-¦   ¦       accident_2016.CSV
-¦   ¦       accident_2017.CSV
-¦   ¦       accident_2018.csv
-¦   ¦       accident_2019.CSV
-¦   ¦       accident_2020.CSV
-¦   ¦       accident_2021.csv
-¦   ¦       
-¦   +---additional_data
-¦           FRPP_GLC_-_United_States_may_9__2023.xlsx
-¦           
+Â¦   Â¦   data_accident.pkl
+Â¦   Â¦   
+Â¦   +---accident_data
+Â¦   Â¦       accident_2011.CSV
+Â¦   Â¦       accident_2012.csv
+Â¦   Â¦       accident_2013.csv
+Â¦   Â¦       accident_2014.csv
+Â¦   Â¦       accident_2015.csv
+Â¦   Â¦       accident_2016.CSV
+Â¦   Â¦       accident_2017.CSV
+Â¦   Â¦       accident_2018.csv
+Â¦   Â¦       accident_2019.CSV
+Â¦   Â¦       accident_2020.CSV
+Â¦   Â¦       accident_2021.csv
+Â¦   Â¦       
+Â¦   +---additional_data
+Â¦           FRPP_GLC_-_United_States_may_9__2023.xlsx
+Â¦           
 +---__pycache__
         columns_selection.cpython-39.pyc
         common.cpython-39.pyc
@@ -87,11 +87,11 @@ El árbol de directorios del repositorio es el siguiente:
 
 ## Resultados
 
-Se obtuvo un dashboard que permite explorar de forma interactiva distintas variables del conjunto de datos, con lo cual se identifican algunas condiciones en las que se presentan accidentes de transito en Estados Unidos. El dashboard tambien incluye mapas que permiten explorar la ubicación geográfica de los accidentes en los distitos estados, condados y ciudades de los Estados Unidos. Para acceder al dashboard ingrese [aqui.](https://jhontd03-accidentapp-app-main-dnkwms.streamlit.app/)
+Se obtuvo un dashboard que permite explorar de forma interactiva distintas variables del conjunto de datos, con lo cual se identifican algunas condiciones en las que se presentan accidentes de transito en Estados Unidos. El dashboard tambien incluye mapas que permiten explorar la ubicaciÃ³n geogrÃ¡fica de los accidentes en los distitos estados, condados y ciudades de los Estados Unidos. El dashboard se puede ejecutar directamente desde linea de [comandos,](#Uso) o a traves del siguiente [enlace.](https://jhontd03-accidentapp-app-main-dnkwms.streamlit.app/)
 
 ## Licencia
 
-El código del presente proyecto se distribuye bajo licencia [MIT](https://github.com/jhontd03/accidentapp/blob/master/LICENSE). Por la presente se concede permiso, de forma gratuita, a cualquier persona que obtenga una copia de este software y de los archivos de documentación asociados (el "Software"), para comerciar con el Software sin restricciones, incluyendo sin limitación los derechos de uso, copia, modificación, fusión, publicación, distribución, sublicencia y/o venta de copias del Software.
+El cÃ³digo del presente proyecto se distribuye bajo licencia [MIT](https://github.com/jhontd03/accidentapp/blob/master/LICENSE). Por la presente se concede permiso, de forma gratuita, a cualquier persona que obtenga una copia de este software y de los archivos de documentaciÃ³n asociados (el "Software"), para comerciar con el Software sin restricciones, incluyendo sin limitaciÃ³n los derechos de uso, copia, modificaciÃ³n, fusiÃ³n, publicaciÃ³n, distribuciÃ³n, sublicencia y/o venta de copias del Software.
 
 
 ## Autor

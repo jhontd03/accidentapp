@@ -87,7 +87,7 @@ El árbol de directorios del repositorio es el siguiente:
 
 ## Resultados
 
-Se obtuvo un dashboard que permite explorar de forma interactiva distintas variables del conjunto de datos, con lo cual se identifican algunas condiciones en las que se presentan accidentes de transito en Estados Unidos. El dashboard tambien incluye mapas que permiten explorar la ubicación geográfica de los accidentes en los distitos estados, condados y ciudades de los Estados Unidos. El dashboard se puede ejecutar directamente desde linea de [comandos,](#Uso) o a traves del siguiente [enlace.](https://jhontd03-accidentapp-app-main-dnkwms.streamlit.app/)
+Se obtuvo un dashboard que permite explorar de forma interactiva distintas variables del conjunto de datos, con lo cual se identifican algunas condiciones en las que se presentan accidentes de transito en Estados Unidos. El dashboard tambien incluye mapas que permiten explorar la ubicación geográfica de los accidentes en los distitos estados, condados y ciudades de los Estados Unidos. El acceso al dashboard se hace a través de la linea de [comandos,](#Uso) o a traves del siguiente [enlace.](https://jhontd03-accidentapp-app-main-dnkwms.streamlit.app/)
 
 ## Licencia
 
